@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/retweet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+        android:onClick="ret"
+        android:text="@string/menu_retweet" />
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/retweet"
+        android:onClick="fav"
+        android:text="@string/menu_favorite" />
+
+    <Button
+        android:id="@+id/reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/retweet"
+        android:layout_alignParentLeft="true"
+        android:onClick="rep"
+        android:text="@string/menu_reply" />
+
+</RelativeLayout>
